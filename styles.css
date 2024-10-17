@@ -89,3 +89,182 @@ button {
 button:hover {
     background-color: #d4649c; /* Cor do botão ao passar o mouse */
 }
+
+.custom-button {
+    background-color: #d4649c; /* Cor primária */
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.custom-button:hover {
+    background-color: #b55081; /* Cor ao passar o mouse */
+    transform: translateY(-3px); /* Elevação ao passar o mouse */
+}
+
+.custom-button:active {
+    transform: translateY(0px); /* Volta ao normal quando clicado */
+}
+
+
+.discord-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.discord-float img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.discord-float img:hover {
+    transform: scale(1.1);
+}
+
+#chat-box {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    width: 250px;
+    background: #202020;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 101;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.chat-hidden {
+    display: none;
+}
+
+.chat-content button {
+    background-color: #d4649c;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.chat-content button:hover {
+    background-color: #b55081;
+}
+.discord-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.discord-float img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.2s;
+}
+
+.discord-float img:hover {
+    transform: scale(1.1);
+}
+
+#chat-box {
+    width: 300px;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background-color: #2c2f33;
+    color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.chat-hidden {
+    display: none;
+}
+
+.chat-header {
+    display: flex;
+    align-items: center;
+    background-color: #23272a;
+    padding: 10px;
+}
+
+.chat-header img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.chat-content {
+    padding: 10px;
+}
+
+#typing-indicator {
+    display: none; /* Começa oculto e só aparece quando ativado */
+    align-items: center;
+    gap: 5px;
+}
+
+.typing-dot {
+    width: 5px;
+    height: 5px;
+    background-color: #7289da;
+    border-radius: 50%;
+    animation: blink 1s infinite;
+}
+
+.typing-dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.typing-dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+/* .chat-header {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: #2c2f33;
+    cursor: pointer;
+}
+
+.back-arrow {
+    font-size: 20px;
+    color: #ffffff;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.back-arrow:hover {
+    color: #d4649c; 
+} */
+
