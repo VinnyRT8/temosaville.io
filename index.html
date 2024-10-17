@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras - Aville City</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <div id="captcha-container">
+        <form action="verificar-captcha.php" method="POST">
+            <div class="g-recaptcha" data-sitekey="6LezXWQqAAAAANjIdSQqgUjMUkz0esByqItps-wf"></div>
+            <br/>
+            <button type="submit">Confirmar</button>
+        </form>
+    </div>
+
+    <!-- Conteúdo da página só é exibido após verificação do captcha -->
+    <div id="conteudo" style="display:none;">
+        <header>
+            <div class="logo">
+                <a href="https://www.avillecity.pro"></a>
+                <img src="logo.png" alt="Logo Aville City">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="https://www.avillecity.pro">Início</a></li>
+                    <li><a href="/discord">Discord</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="rules">
+                <h1>Regras gerais da Aville City</h1>
+                <p>Bem-vindo à nossa cidade! Aqui estão as regras para garantir uma experiência de jogo justa e divertida para todos.</p>
+                <ul>
+                    <li>Respeito Mútuo: Trate todos os jogadores com respeito e cordialidade, evitando qualquer forma de discriminação ou assédio.</li>
+                    <li>Roleplay Consistente: Mantenha a coerência do seu personagem e atue de acordo com a personalidade e história que você criou.</li>
+                    <li>Evite Meta-gaming: Não utilize informações obtidas fora do jogo para influenciar suas ações dentro do roleplay.</li>
+                    <li>Responsabilidade Pessoal: Comportamentos tóxicos ou abusivos afetam toda a comunidade.</li>
+                    <li>Cumprimento das Regras e Consequências: Ao entrar na cidade, o jogador concorda com todas as regras estabelecidas. Qualquer violação das normas poderá resultar em punições, incluindo banimento. Em caso de infrações graves, apenas o CEO Vinny será responsável por avaliar as situações.</li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Aville City. Todos os direitos reservados.</p>
+            <a href="/contato">Contato</a>
+        </footer>
+    </div>
+</body>
+</html>

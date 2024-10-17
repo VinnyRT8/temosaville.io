@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    background-color: #121212; /* Fundo escuro semelhante ao site */
+    color: #ffffff; /* Texto branco */
+    font-family: 'Poppins', sans-serif; /* Fonte principal do site */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #202020; /* Cor de fundo do cabeçalho */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+}
+
+nav a {
+    color: #ffffff; /* Azul brilhante para links */
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #d4649c; /* Amarelo vibrante para hover */
+}
+
+.rules {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+.rules h1 {
+    text-align: center;
+    color: #d4649c; /* Amarelo vibrante */
+    margin-bottom: 30px;
+}
+
+.rules ul {
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+.rules ul li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #202020;
+    color: #888;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+footer a {
+    color: #e0e0e0;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #d4649c;
+}
+button {
+    background-color: #ffffff; /* Cor do botão */
+    color: #d4649c; /* Cor do texto do botão */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d4649c; /* Cor do botão ao passar o mouse */
+}
